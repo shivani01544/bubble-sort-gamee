@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f4f7;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+#game-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: 60px;
+  height: 60px;
+  background: #4CAF50;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.block:hover {
+  
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+
+.block.selected {
+  background: #ff9800;
+}
+
+#message {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #444;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b7dda;
+}
+
+/* Level selector sidebar */
+#level-selector {
+  position: fixed;      /* Side me chipka hua */
+  top: 50%;
+  left: 20px;           /* Left side */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Circle style */
+.level-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #3498db;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+/* Hover effect */
+.level-circle:hover {
+  background: #2ecc71;
+  transform: scale(1.2);
+}
+
+/* Active level highlight */
+.level-circle.active {
+  background: #e74c3c;
+}

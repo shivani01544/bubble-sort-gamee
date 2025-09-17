@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bubble Sort Game</title>
+  <link rel="stylesheet" href="bubble sort.css">
+</head>
+<body>
+  <h1><b>🧠 Bubble Sort Game</b></h1>
+    <p>Click two blocks to try swapping them in Bubble Sort order.</p>
+    <p> CHOOSE ADJECENT BLOCKS ONLY </p>
+    <br><br>
+  <div id="game-container"></div>
+
+ <div id="level-selector">
+  <p>LEVEL</p>
+  <div class="level-circle" onclick="setLevel(4)">1</div>
+  <div class="level-circle" onclick="setLevel(6)">2</div>
+  <div class="level-circle" onclick="setLevel(8)">3</div>
+  <div class="level-circle" onclick="setLevel(10)">4</div>
+</div>
+
+  <p id="message"></p>
+  <button onclick="restartGame()">🔁 Restart</button>
+   <h6>left block > right block ➤ RIGHT SWAP</h6>
+   <h6>left block ≤ right block ➤ WRONG SWAP </h6>
+
+  <script src="bubble sort.js"></script>
+</body>
+</html>
