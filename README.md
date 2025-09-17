@@ -3,6 +3,9 @@
 A fun and interactive game to learn how Bubble Sort works.
 Swap adjacent blocks to sort the numbers in ascending order! 🎮
 
+  live demo -:  https://shivani01544.github.io/bubble-sort-gamee/
+
+
 🚀 Features :
 
 🎲 Random unique numbers every time
